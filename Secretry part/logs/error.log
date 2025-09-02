@@ -1,0 +1,7 @@
+[21-May-2025 13:49:02 UTC] Document operation error: File upload error: 4
+[21-May-2025 13:59:33 UTC] PHP Deprecated:  mysqli_real_escape_string(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\BranSense\Secretry part\includes\document_functions.php on line 77
+[21-May-2025 13:59:33 UTC] Document operation error: Cannot add or update a child row: a foreign key constraint fails (`brainsense`.`documents`, CONSTRAINT `documents_ibfk_2` FOREIGN KEY (`patient_id`) REFERENCES `patients` (`id`) ON DELETE CASCADE)
+[21-May-2025 13:59:41 UTC] PHP Deprecated:  mysqli_real_escape_string(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\BranSense\Secretry part\includes\document_functions.php on line 77
+[21-May-2025 13:59:41 UTC] Document operation error: Cannot add or update a child row: a foreign key constraint fails (`brainsense`.`documents`, CONSTRAINT `documents_ibfk_2` FOREIGN KEY (`patient_id`) REFERENCES `patients` (`id`) ON DELETE CASCADE)
+[21-May-2025 13:59:53 UTC] PHP Deprecated:  mysqli_real_escape_string(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\BranSense\Secretry part\includes\document_functions.php on line 77
+[21-May-2025 13:59:53 UTC] Document operation error: Cannot add or update a child row: a foreign key constraint fails (`brainsense`.`documents`, CONSTRAINT `documents_ibfk_2` FOREIGN KEY (`patient_id`) REFERENCES `patients` (`id`) ON DELETE CASCADE)

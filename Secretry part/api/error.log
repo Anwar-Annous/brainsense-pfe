@@ -1,0 +1,135 @@
+[21-May-2025 17:30:13 Europe/Berlin] Raw input received: {"subject":"mm","message":"nn","recipient_id":"7","recipient_type":"patient","priority":"medium"}
+[21-May-2025 17:30:13 Europe/Berlin] Decoded data: Array
+(
+    [subject] => mm
+    [message] => nn
+    [recipient_id] => 7
+    [recipient_type] => patient
+    [priority] => medium
+)
+
+[21-May-2025 17:30:13 Europe/Berlin] Sanitized data: Array
+(
+    [subject] => mm
+    [message] => nn
+    [recipient_id] => 7
+    [recipient_type] => patient
+    [priority] => medium
+    [sender_id] => 1
+)
+
+[21-May-2025 17:30:13 Europe/Berlin] Preparing query: INSERT INTO messages (subject, message, sender_id, sender_type, recipient_id, recipient_type, priority) 
+                 VALUES (?, ?, ?, 'secretary', ?, ?, ?)
+[21-May-2025 17:30:13 Europe/Berlin] Executing statement with parameters: subject=mm, message=nn, sender_id=1, recipient_id=7, recipient_type=patient, priority=medium
+[21-May-2025 17:30:13 Europe/Berlin] Error in save_message.php: Cannot add or update a child row: a foreign key constraint fails (`brainsense`.`messages`, CONSTRAINT `messages_ibfk_1` FOREIGN KEY (`sender_id`) REFERENCES `patients` (`id`) ON DELETE SET NULL)
+[21-May-2025 17:30:13 Europe/Berlin] Stack trace: #0 C:\xampp\htdocs\BranSense\Secretry part\api\save_message.php(127): mysqli_stmt_execute(Object(mysqli_stmt))
+#1 {main}
+[21-May-2025 17:31:32 Europe/Berlin] Raw input received: {"subject":"lolo","message":"z","recipient_id":"7","recipient_type":"patient","priority":"medium"}
+[21-May-2025 17:31:32 Europe/Berlin] Decoded data: Array
+(
+    [subject] => lolo
+    [message] => z
+    [recipient_id] => 7
+    [recipient_type] => patient
+    [priority] => medium
+)
+
+[21-May-2025 17:31:32 Europe/Berlin] Sanitized data: Array
+(
+    [subject] => lolo
+    [message] => z
+    [recipient_id] => 7
+    [recipient_type] => patient
+    [priority] => medium
+    [sender_id] => 1
+    [sender_type] => secretary
+)
+
+[21-May-2025 17:31:32 Europe/Berlin] Preparing query: INSERT INTO messages (subject, message, sender_id, sender_type, recipient_id, recipient_type, priority) 
+                 VALUES (?, ?, ?, ?, ?, ?, ?)
+[21-May-2025 17:31:32 Europe/Berlin] Executing statement with parameters: subject=lolo, message=z, sender_id=1, sender_type=secretary, recipient_id=7, recipient_type=patient, priority=medium
+[21-May-2025 17:31:32 Europe/Berlin] Error in save_message.php: Cannot add or update a child row: a foreign key constraint fails (`brainsense`.`messages`, CONSTRAINT `messages_ibfk_1` FOREIGN KEY (`sender_id`) REFERENCES `patients` (`id`) ON DELETE SET NULL)
+[21-May-2025 17:31:32 Europe/Berlin] Stack trace: #0 C:\xampp\htdocs\BranSense\Secretry part\api\save_message.php(131): mysqli_stmt_execute(Object(mysqli_stmt))
+#1 {main}
+[21-May-2025 17:32:02 Europe/Berlin] Raw input received: {"subject":"zzzzzzz","message":"zz","recipient_id":"7","recipient_type":"patient","priority":"medium"}
+[21-May-2025 17:32:02 Europe/Berlin] Decoded data: Array
+(
+    [subject] => zzzzzzz
+    [message] => zz
+    [recipient_id] => 7
+    [recipient_type] => patient
+    [priority] => medium
+)
+
+[21-May-2025 17:32:02 Europe/Berlin] Sanitized data: Array
+(
+    [subject] => zzzzzzz
+    [message] => zz
+    [recipient_id] => 7
+    [recipient_type] => patient
+    [priority] => medium
+    [sender_id] => 1
+    [sender_type] => secretary
+)
+
+[21-May-2025 17:32:02 Europe/Berlin] Preparing query: INSERT INTO messages (subject, message, sender_id, sender_type, recipient_id, recipient_type, priority) 
+                 VALUES (?, ?, ?, ?, ?, ?, ?)
+[21-May-2025 17:32:02 Europe/Berlin] Executing statement with parameters: subject=zzzzzzz, message=zz, sender_id=1, sender_type=secretary, recipient_id=7, recipient_type=patient, priority=medium
+[24-May-2025 01:45:08 Europe/Berlin] Raw input received: {"subject":"jfdfj","message":"lolofdfd","recipient_id":"4","recipient_type":"patient","priority":"medium"}
+[24-May-2025 01:45:08 Europe/Berlin] Decoded data: Array
+(
+    [subject] => jfdfj
+    [message] => lolofdfd
+    [recipient_id] => 4
+    [recipient_type] => patient
+    [priority] => medium
+)
+
+[24-May-2025 01:45:08 Europe/Berlin] Sanitized data: Array
+(
+    [subject] => jfdfj
+    [message] => lolofdfd
+    [recipient_id] => 4
+    [recipient_type] => patient
+    [priority] => medium
+    [sender_id] => 1
+    [sender_type] => secretary
+)
+
+[24-May-2025 01:45:08 Europe/Berlin] Preparing query: INSERT INTO messages (subject, message, sender_id, sender_type, recipient_id, recipient_type, priority) 
+                 VALUES (?, ?, ?, ?, ?, ?, ?)
+[24-May-2025 01:45:08 Europe/Berlin] Executing statement with parameters: subject=jfdfj, message=lolofdfd, sender_id=1, sender_type=secretary, recipient_id=4, recipient_type=patient, priority=medium
+[24-May-2025 01:45:26 Europe/Berlin] Raw input received: {"subject":"ffjj","message":"doododod","recipient_id":"1","recipient_type":"doctor","priority":"medium"}
+[24-May-2025 01:45:26 Europe/Berlin] Decoded data: Array
+(
+    [subject] => ffjj
+    [message] => doododod
+    [recipient_id] => 1
+    [recipient_type] => doctor
+    [priority] => medium
+)
+
+[24-May-2025 01:45:26 Europe/Berlin] Sanitized data: Array
+(
+    [subject] => ffjj
+    [message] => doododod
+    [recipient_id] => 1
+    [recipient_type] => doctor
+    [priority] => medium
+    [sender_id] => 1
+    [sender_type] => secretary
+)
+
+[24-May-2025 01:45:26 Europe/Berlin] Preparing query: INSERT INTO messages (subject, message, sender_id, sender_type, recipient_id, recipient_type, priority) 
+                 VALUES (?, ?, ?, ?, ?, ?, ?)
+[24-May-2025 01:45:26 Europe/Berlin] Executing statement with parameters: subject=ffjj, message=doododod, sender_id=1, sender_type=secretary, recipient_id=1, recipient_type=doctor, priority=medium
+[18-Jun-2025 04:11:01 Europe/Berlin] PHP Warning:  require_once(../../config/db_connect.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\BrainSense\Secretry part\api\save_message.php on line 10
+[18-Jun-2025 04:11:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../config/db_connect.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\BrainSense\Secretry part\api\save_message.php:10
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\BrainSense\Secretry part\api\save_message.php on line 10
+[18-Jun-2025 04:12:37 Europe/Berlin] PHP Warning:  require_once(../../config/db_connect.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\BrainSense\Secretry part\api\save_message.php on line 10
+[18-Jun-2025 04:12:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '../../config/db_connect.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\BrainSense\Secretry part\api\save_message.php:10
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\BrainSense\Secretry part\api\save_message.php on line 10
